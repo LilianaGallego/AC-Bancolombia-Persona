@@ -14,6 +14,13 @@ spring:
   data:
     mongodb:
       uri: "mongodb+srv://LilianaGallego:E6NnPeYOZVrExqV6@cluster0.6mymrrh.mongodb.net/Persona?retryWrites=true&w=majority"
+    rabbitmq:
+      host: "woodpecker.rmq.cloudamqp.com"
+      username: "uoxhzydv"
+      password: "x7StJKgvdQ_lu8qFzgS4OOtftZsIqmnC"
+      virtual_host: "uoxhzydv"
+      port: 5672
+      name: "QUEUE"
 
 management:
   endpoints:
