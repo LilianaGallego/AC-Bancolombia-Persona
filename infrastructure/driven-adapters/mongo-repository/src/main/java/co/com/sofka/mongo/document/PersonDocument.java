@@ -13,6 +13,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class PersonDocument {
 
     @Id
-    private String Id;
+    private String id;
     private String name;
 }

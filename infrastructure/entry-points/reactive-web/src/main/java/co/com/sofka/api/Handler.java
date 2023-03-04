@@ -35,6 +35,6 @@ public class Handler {
         Mono<Person> personMono = serverRequest.bodyToMono((Person.class));
 
         return personMono.flatMap(person -> ServerResponse.status(HttpStatus.CREATED).contentType(MediaType.APPLICATION_JSON)
-                .body(createUseCase.create(person), Person.class));
+                .body(createUseCase.createPerson(person), Person.class));
     }
 }
